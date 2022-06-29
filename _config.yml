@@ -1,4 +1,4 @@
-url: https://insert-your-url-here.invalid # replace with your webring's URL, which should end in .netlify.app (no slash afterwards)
+url: https://cool-people-webring.netlify.app # replace with your webring's URL, which should end in .netlify.app (no slash afterwards)
 include: [_redirects]
 kramdown:
  syntax_highlighter: +nil+
