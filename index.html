@@ -1,0 +1,18 @@
+---
+title: Cool people webring
+layout: html
+---
+<h1>Welcome to the Cool people webring!</h1>
+<p>
+  What is a <a href=https://en.wikipedia.org/wiki/Webring>webring</a> ?.<br>
+  Conallia made this webring, view my site here --> <a href="https://conallia.neocities.org">https://conallia.neocities.org</a> <br>
+  Cool people webring is an invite only webring filled with cool people. Once you become a member, you are allowed to invite anyone. This webring doesn't really have much of a theme, although I assume it will mostly be made up of personal websites.
+</p>
+
+<p>If the ring is broken, please <a href={{site.github_repo_url}}/issues/new>submit an error report on GitHub</a>.
+
+<h2 id=members>Members ({{site.data.members.size}})</h2>
+<ul>
+{% for member in site.data.members %}
+<li><a href="{{member.url | xml_escape}}">{{member.name | xml_escape | newline_to_br}}</a>{% endfor %}
+</ul>
